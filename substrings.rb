@@ -2,7 +2,7 @@
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 test_string = "Howdy partner, sit down! How's it going?"
 
-# loops through the desired string and returns a hash containing the number of times each substring appeared inside the test string
+# enumerates through the desired string and returns a hash containing the number of times each substring appeared inside the test string
 def substring (string, array)
     string = string.downcase.split(" ")
     string.reduce(Hash.new(0)) do |output, word_in_string|
